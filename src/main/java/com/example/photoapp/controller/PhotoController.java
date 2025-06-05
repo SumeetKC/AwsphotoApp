@@ -14,6 +14,11 @@ public class PhotoController {
         this.photoService = photoService;
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "Application is running!";
+    }
+
     @PostMapping("/upload")
     public String uploadPhoto(@RequestParam("userId") String userId,
                               @RequestParam("file") MultipartFile file) throws IOException {
