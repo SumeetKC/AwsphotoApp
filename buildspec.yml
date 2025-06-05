@@ -8,8 +8,10 @@ phases:
     commands:
       - echo "Building the project..."
       - mvn clean package
+      - echo "Listing files in target/"
+      - ls -al target/
 
 artifacts:
   files:
-    - target/photoapp-0.0.1-SNAPSHOT.jar
+    - *.jar
   base-directory: target
