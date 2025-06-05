@@ -11,5 +11,5 @@ phases:
 
 artifacts:
   files:
-    - target/*.jar
+    - target/photoapp-0.0.1-SNAPSHOT.jar
   base-directory: target
